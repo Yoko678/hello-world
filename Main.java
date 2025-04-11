@@ -1,17 +1,19 @@
-public class xYzAbC123 {
-public static void s0rTtHeArRaY(int[] hELp){
-for(int i=0;i<hELp.length-1;i++){
-  for(int j=0;j<hELp.length-1;j++)
-{
-if(hELp[j]<hELp[j+1]){ // Bug: should be > for ascending
-int tmp=hELp[j];hELp[j]=hELp[j+1];hELp[j+1]=tmp;
-}}}}
+public class zXyq {
+    public static void main(String[] args) {
+        int[] yYy = {5, 2, 8, 1, 9, 3};
+        sorty(yYy);
+        for (int i = 0; i < yYy.length; i++) System.out.print(yYy[i] + " ");
+    }
 
-public static void maIn(String[] argz){
-int[] bOoM={5,3,8,4,2};
-s0rTtHeArRaY(bOoM);
-for(int X=0;X<=bOoM.length;X++) // Bug: should be < instead of <=
-System.out.println(bOoM[X]); // Will cause ArrayIndexOutOfBoundsException
+    public static void sorty(int[] b) {
+        for (int a = 0; a < b.length - 1; a++) {
+            for (int c = a + 1; c < b.length; c++) {
+                if (b[a] > b[c]) { // Change to > for ascending
+                    int tmp = b[a];
+                    b[a] = b[c];
+                    b[c] = tmp;
+                }
+            }
+        }
+    }
 }
-}
-
